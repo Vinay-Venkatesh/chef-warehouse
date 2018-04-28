@@ -1,0 +1,2 @@
+# chef-warehouse
+Chef repository
