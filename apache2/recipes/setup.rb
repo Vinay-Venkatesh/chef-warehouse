@@ -7,8 +7,8 @@
 
 package 'apache2'
 package 'vim'
-file '/var/www/html/index.html' do
-	content "<h1>Welcome to chef client"
+template '/var/www/html/index.html' do
+	source 'index.html.erb'
 end
 service 'apache2'do
 	action [:enable,:start]
